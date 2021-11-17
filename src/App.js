@@ -11,6 +11,9 @@ import NotFound from './Pages/NotFound/NotFound';
 import Booking from "./Pages/Booking/Booking";
 import AuthProvider from "./Pages/context/AuthProvider";
 import PrivateRoute from "./Pages/Shared/PrivateRoute";
+import AddService from "./Pages/AddService/AddService";
+import ManageServices from "./Pages/ManageServices/ManageServices";
+
 
 function App() {
   return (
@@ -24,6 +27,12 @@ function App() {
         </Route>
         <Route path='/home'>
       <Home></Home>
+        </Route>
+        <Route path='/add/service'>
+          <AddService></AddService>
+        </Route>
+        <Route path='/manage/service'>
+          <ManageServices></ManageServices>
         </Route>
         <Route path='/login'>
           <Login></Login>

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Spinner } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from '../hooks/useAuth';
 
 const Login = () => {
-    const {googleSignIn, setIsLoading} = useAuth()
+    const {googleSignIn, setIsLoading, isLoading} = useAuth()
     const history = useHistory()
     const location = useLocation();
     const redirect_uri = location.state?.from || '/home'
